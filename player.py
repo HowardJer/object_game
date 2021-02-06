@@ -1,16 +1,19 @@
 class Player:
-    def __init__(self, intitalRow, initialColumn):
-        self.rowPosition = intitalRow
+    def __init__(self, initialRow, initialColumn):
+        self.rowPosition = initialRow
         self.columnPosition = initialColumn
 
     # TODO
-    # def moveUp(self):
+    def moveUp(self):    
+      self.rowPosition = self.rowPosition - 1 
 
     # TODO
-    # def moveDown(self):
+    def moveDown(self):
+        self.rowPosition = self.rowPosition + 1 
+    # TODO
+    def moveLeft(self):
+        self.columnPosition = self.columnPosition - 1 
 
     # TODO
-    # def moveLeft(self):
-
-    # TODO
-    # def moveRight(self):
+    def moveRight(self):
+        self.columnPosition = self.columnPosition + 1 

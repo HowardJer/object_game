@@ -22,4 +22,15 @@ while True:
     selection = input("Make a move: ")
     # TODO
     # Move the player through the board
+    if selection == "w":
+        player.moveUp()
+    elif selection == "s":
+        player.moveDown()  
+    elif selection == "a":
+        player.moveLeft()
+    elif selection == "d":
+        player.moveRight()
+    else:
+        print("Invalid Direction!!!")
+            
     # Check if the player has won, if so print a message and break the loop!
